@@ -1,0 +1,5 @@
+[ssh]
+keyfile = "/home/YOUR_USERNAME/.ssh/YOUR_SSH_PRIVATE_KEY"
+user = "YOUR_REMOTE_USERNAME"
+addr = "YOUR_REMOTE_IP_OR_DOMAIN"
+port = "22"

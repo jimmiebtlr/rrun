@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $(pwd)
+curl localhost:5059 -d "{\"runDir\":\"$(pwd)\",\"command\":\"$1 $2 $3 $4\"}"
