@@ -1,13 +1,3 @@
-# TODO
-
-- Example configs? - Start with testing
-- Reset git
-- Diagram
-- Better install instructions
-- Begin writing crostini post, reach out to mods to ask permission?
-
------------
-
 This is highly experimental.
 
 Code is quite bad at the moment, but interested in feedback mostly on the concept.
@@ -27,21 +17,7 @@ or in ml land
 rrun python3 train.py
 ```
 
-# Pre-requisites
-
-## Remote machine
-
-- apt-get install rsync openssh-server nix-shell
-- Accepts public key without password from your local machine.
-
-## Local machine
-
-- apt-get install rsync openssh-client
-- Add rrun/bin to path
-- Install and start daemon (non-root user)
-- Directory you run needs rrun.toml and dev.nix
-
-# Current Features
+## Current Features
 
 - Rough 2-way sync via rsync (very inefficient, doesn't handle deletes)
 - Run command remotely
@@ -66,21 +42,29 @@ rrun python3 train.py
 
 # Example Use Cases
 
-## Machine learning - Training
+- Machine learning - Spin up training jobs
+- Run long running tests
+- Collaboration - Share an env with others to show errors or ui changes.
 
-How to bring trained model back to local?
-Robust to disconnect/reconnect
 
-rrun -- python3 train.py
+# Getting started
 
-## Intense testing
+## Pre-requisites
 
-rrun -- npm run test
+### Remote machine
 
-## Long project build
+- apt-get install rsync openssh-server nix-shell
+- Accepts public key without password from your local machine.
 
-rrun -- npm run build
+### Local machine
 
-## Collaboration (Expose to outside world)
+- apt-get install rsync openssh-client
+- Add rrun/bin to path
+- Install and start daemon (non-root user)
+- Directory you run needs rrun.toml and dev.nix
 
-rrun --demo -- npm run start
+
+## TODO
+
+- Example configs? - Start with testing
+- Better install instructions
