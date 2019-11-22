@@ -68,3 +68,13 @@ rrun python3 train.py
 
 - Example configs? - Start with testing
 - Better install instructions
+
+
+
+Kubernetes
+- Design container?
+- Spin up deployment
+- Design how to get data back out if auto shutdown
+- TTL
+- Port forwarding
+- Expose port outside
